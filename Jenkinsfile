@@ -13,6 +13,7 @@ pipeline {
             post {
                 always {
                     gatlingArchive()
+                    notifySlack()
                 }
             }
         }
